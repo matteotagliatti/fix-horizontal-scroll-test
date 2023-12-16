@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .no-scrollbar {
+        scrollbar-width: none;
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .edge-mask {
+        mask-image: linear-gradient(
+          to right,
+          transparent,
+          white 8px calc(100% - 8px),
+          transparent
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mx-auto max-w-md px-8">
+      <div
+        class="no-scrollbar edge-mask -mx-8 grid min-h-[350px] max-w-3xl snap-x snap-mandatory grid-cols-[repeat(4,100%)] gap-4 overflow-auto px-8 py-4"
+      >
+        <div
+          class="snap-center snap-always rounded-2xl border bg-white p-6 shadow-md"
+        >
+          <h3 class="mb-2 text-xl font-semibold text-gray-800">Card title 1</h3>
+          <p class="text-gray-600">Card description</p>
+        </div>
+        <div
+          class="snap-center snap-always rounded-2xl border bg-white p-6 shadow-md"
+        >
+          <h3 class="mb-2 text-xl font-semibold text-gray-800">Card title 2</h3>
+          <p class="text-gray-600">Card description</p>
+        </div>
+        <div
+          class="snap-center snap-always rounded-2xl border bg-white p-6 shadow-md"
+        >
+          <h3 class="mb-2 text-xl font-semibold text-gray-800">Card title 3</h3>
+          <p class="text-gray-600">Card description</p>
+        </div>
+        <div
+          class="snap-center snap-always rounded-2xl border bg-white p-6 shadow-md"
+        >
+          <h3 class="mb-2 text-xl font-semibold text-gray-800">Card title 4</h3>
+          <p class="text-gray-600">Card description</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
